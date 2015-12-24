@@ -10,9 +10,28 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            int x1 = 2;
+            int y1 = 2;
+            char symb1 = '@';
 
+            Draw(x1, y1, symb1);
+
+
+            int x2 = 6;
+            int y2 = 6;
+            char symb2 = '@';
+
+            Draw(x2, y2, symb2);
+                
+                
             Console.WriteLine("Hello!");
             Console.ReadLine();
+        }
+
+        static void Draw(int x, int y, char symb)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(symb);
         }
     }
 }
