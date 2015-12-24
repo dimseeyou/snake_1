@@ -10,16 +10,10 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point();
-            p1.x = 3;
-            p1.y = 3;
-            p1.symb = '@';
+            Point p1 = new Point(3,3, '@');
             p1.Draw();
 
-            Point p2 = new Point();
-            p2.x = 5;
-            p2.y = 5;
-            p2.symb = '@';
+            Point p2 = new Point(4,5,'$');
             p2.Draw();
 
 
