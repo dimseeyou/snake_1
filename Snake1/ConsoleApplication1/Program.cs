@@ -10,28 +10,22 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int x1 = 2;
-            int y1 = 2;
-            char symb1 = '@';
+            Point p1 = new Point();
+            p1.x = 3;
+            p1.y = 3;
+            p1.symb = '@';
+            p1.Draw();
 
-            Draw(x1, y1, symb1);
+            Point p2 = new Point();
+            p2.x = 5;
+            p2.y = 5;
+            p2.symb = '@';
+            p2.Draw();
 
 
-            int x2 = 6;
-            int y2 = 6;
-            char symb2 = '@';
-
-            Draw(x2, y2, symb2);
-                
-                
-            Console.WriteLine("Hello!");
+            /* Console.WriteLine("Hello!");*/
             Console.ReadLine();
         }
 
-        static void Draw(int x, int y, char symb)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(symb);
-        }
     }
 }
